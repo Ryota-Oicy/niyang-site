@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DanceNow プライバシーポリシー — niyang.app</title>
-  <meta name="description" content="DanceNow は動画・音源・構成データを外部に送信しません。個人情報・利用状況・端末識別子を収集しません。">
+  <meta name="description" content="DanceNow は動画・音源・構成データを外部に送信しません。個人情報は収集せず、アカウントもありません。外部へ渡るのは購入(課金)の記録だけです。">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -16,32 +16,45 @@
   <main>
     <section id="ja" lang="ja">
       <h1>DanceNow プライバシーポリシー</h1>
-      <p class="tagline">最終更新日: 2026年9月11日</p>
+      <p class="tagline">最終更新日: 2026年9月17日</p>
 
       <p>DanceNow(以下「本アプリ」)は、niyang が開発・提供する iPhone 向けアプリです。本アプリにおける利用者の情報の扱いを、以下のとおり定めます。</p>
 
       <h3>1. 動画・音源・構成データは外部に送信しません</h3>
-      <p>本アプリは、利用者が読み込んだ動画、音源、および作成した構成データを<strong>一切外部に送信しません</strong>。動画の比較、音声の解析、テンポの判定、動画の書き出しといったすべての処理は、利用者の端末の中だけで完結します。本アプリには、これらのデータをサーバーへ送る仕組みそのものがありません。</p>
+      <p>本アプリは、利用者が読み込んだ動画、音源、および作成した構成データを<strong>一切外部に送信しません</strong>。動画の比較、音声の解析、テンポの判定、動画や PDF の書き出しといったすべての処理は、利用者の端末の中だけで完結します。本アプリには、これらのデータをサーバーへ送る仕組みそのものがありません。</p>
 
-      <h3>2. 個人情報・利用状況・端末識別子を収集しません</h3>
-      <p>本アプリは、氏名・メールアドレス等の個人情報、アプリの利用状況、端末識別子(広告識別子を含む)を収集しません。アカウント登録もありません。</p>
+      <h3>2. 購入(課金)に関する情報</h3>
+      <p>本アプリには有料機能「DanceNow Pro」があります。購入・復元・解約の処理は、<strong>Apple の App Store の仕組み(StoreKit)を通じて行われます</strong>。本アプリがクレジットカード番号などの決済情報を受け取ることはありません。</p>
+      <p>あわせて、どのプランがどれだけ使われ、どれだけ継続しているかを把握するために、<strong>RevenueCat, Inc. の提供するサービス</strong>を利用しています。RevenueCat へ渡るのは次のものだけです。</p>
+      <ul>
+        <li>購入した商品の種類(月額・年額・買い切り)と、購入・更新・解約・返金の日時といった<strong>購入の記録</strong></li>
+        <li>本アプリが端末ごとに自動生成する<strong>匿名の識別子</strong>(ランダムな文字列で、利用者ご本人には結び付きません)</li>
+        <li>通信に伴う<strong>IP アドレス</strong>(国・地域の判定に使われます)</li>
+      </ul>
+      <p><strong>動画・音源・構成データは一切渡りません。</strong> 氏名・メールアドレス・Apple ID・広告識別子も渡りません。この情報は、本アプリの提供者が売上と継続率を把握するためだけに使い、<strong>広告や、他社のアプリ・サイトをまたいだ追跡には一切使いません</strong>。</p>
+      <p class="muted">同じ集計を自前のサーバーで行おうとすると、利用者のデータをどこかへ送る必要が生じます。購入の記録だけを外部のサービスに預けることで、「動画も音源も端末から出さない」という設計を保っています。</p>
 
-      <h3>3. 写真ライブラリへのアクセス</h3>
+      <h3>3. 個人情報は収集しません・アカウントはありません</h3>
+      <p>本アプリは、氏名・メールアドレス等の個人情報を収集しません。アカウント登録もありません。広告識別子(IDFA)は使用せず、アプリの利用状況を第三者へ送ることもありません。外部へ渡るのは、前項2の購入の記録だけです。</p>
+
+      <h3>4. 写真ライブラリへのアクセス</h3>
       <p>写真ライブラリへのアクセスは、<strong>動画を読み込むこと、および書き出した動画を保存すること</strong>のためにのみ使用します。読み込みは利用者が選んだ動画に限られ、保存は利用者が書き出しの操作をしたときにのみ行います。</p>
 
-      <h3>4. ファイルへのアクセス</h3>
-      <p>ファイル(ファイル App 等)へのアクセスは、<strong>音源ファイルと <code>.dancenow</code> ファイルを読み込むこと</strong>のためにのみ使用します。利用者が選んだファイル以外にはアクセスしません。</p>
-
-      <h3>5. 広告 SDK・解析 SDK を含みません</h3>
-      <p>本アプリは、広告配信のための SDK、および利用状況を解析するための第三者 SDK を一切含みません。トラッキングの許可を求めることもありません。</p>
+      <h3>5. ファイルへのアクセスと、利用者が書き出すファイル</h3>
+      <p>ファイル(ファイル App 等)へのアクセスは、<strong>音源ファイル、<code>.dancenow</code> ファイル、およびバックアップファイルを読み込むこと</strong>のためにのみ使用します。利用者が選んだファイル以外にはアクセスしません。</p>
+      <p>本アプリが書き出すファイル(動画・PDF・<code>.dancenow</code>・バックアップ)は、<strong>すべて利用者ご自身の操作で、利用者が選んだ場所に保存・送信されます</strong>。本アプリがそれらをどこかへ自動で送ることはありません。iCloud Drive などクラウドの保存先を選んだ場合、そのファイルはその提供元(Apple 等)のサービスに保存されます。</p>
+      <p><code>.dancenow</code> ファイルは、共有するときに<strong>「音源も入れる」を選んだ場合に限り</strong>、音源を含みます。渡してよい音源かどうかは、送る利用者ご自身でご確認ください。</p>
 
       <h3>6. 「あなたの統計」画面について</h3>
       <p>本アプリの設定画面には、書き出しや共有の回数などを表示する「あなたの統計」があります。<strong>これらの数字は端末内でのみ数えられ、送信されません。</strong> 利用者が「1行にまとめてコピー」を押した場合に限り、その内容が端末のクリップボードに入ります。それを誰かに送るかどうかは、利用者自身が決めます。</p>
 
-      <h3>7. 将来の変更について</h3>
+      <h3>7. 広告 SDK は含みません・トラッキングはしません</h3>
+      <p>本アプリは、<strong>広告配信のための SDK を一切含みません</strong>。第三者の SDK は、前項2で述べた購入の集計に使う RevenueCat の 1 つだけです。<strong>他社のアプリやサイトをまたいで利用者を追跡することはなく</strong>、トラッキングの許可を求めるダイアログも表示しません。</p>
+
+      <h3>8. 将来の変更について</h3>
       <p>将来、匿名の利用回数(機能を使った回数のみ。動画・音源・構成データ・端末識別子は含まない)を<strong>利用者の同意(オプトイン)のもとで送信する機能</strong>を追加する場合は、本文書を更新したうえで、アプリ内で明示的に同意を求めます。同意しない限り送信は行われません。</p>
 
-      <h3>8. お問い合わせ</h3>
+      <h3>9. お問い合わせ</h3>
       <p>本ポリシーに関するお問い合わせは <a href="mailto:support@niyang.app">support@niyang.app</a> までお願いします。</p>
 
       <p class="muted"><a href="/dancenow/support/">サポート</a> ・ <a href="/dancenow/">DanceNow について</a></p>
@@ -49,32 +62,45 @@
 
     <section id="en" lang="en">
       <h2>DanceNow Privacy Policy</h2>
-      <p class="tagline">Last updated: September 11, 2026</p>
+      <p class="tagline">Last updated: September 17, 2026</p>
 
       <p>DanceNow (“the app”) is an iPhone app developed and published by niyang. This document describes how the app treats your information.</p>
 
       <h3>1. Your videos, music and formation data are never sent anywhere</h3>
-      <p>The app <strong>never transmits</strong> the videos you load, your music, or the formation data you create. Video comparison, audio analysis, tempo detection and video export all run entirely on your device. The app contains no mechanism to send this data to any server.</p>
+      <p>The app <strong>never transmits</strong> the videos you load, your music, or the formation data you create. Video comparison, audio analysis, tempo detection and video or PDF export all run entirely on your device. The app contains no mechanism to send this data to any server.</p>
 
-      <h3>2. No personal information, usage data or device identifiers are collected</h3>
-      <p>The app does not collect personal information such as your name or email address, does not collect usage data, and does not collect device identifiers (including the advertising identifier). There is no account.</p>
+      <h3>2. Purchase information</h3>
+      <p>The app offers a paid tier, DanceNow Pro. Buying, restoring and cancelling all happen <strong>through Apple's App Store (StoreKit)</strong>. The app never receives your payment details, such as a card number.</p>
+      <p>To understand which plans are used and how long people keep them, the app also uses a service provided by <strong>RevenueCat, Inc.</strong> Only the following reaches RevenueCat:</p>
+      <ul>
+        <li>Your <strong>purchase record</strong> — which product (monthly, yearly or lifetime) and when it was bought, renewed, cancelled or refunded</li>
+        <li>An <strong>anonymous identifier</strong> the app generates per device (a random string that is not tied to you personally)</li>
+        <li>Your <strong>IP address</strong>, which comes with the network request and is used to determine your country or region</li>
+      </ul>
+      <p><strong>No video, music or formation data ever reaches RevenueCat.</strong> Neither does your name, email address, Apple ID or advertising identifier. This information is used only so that we can understand revenue and retention. It is <strong>never used for advertising, and never to track you across other companies' apps or websites</strong>.</p>
+      <p class="muted">Producing the same figures on our own server would mean sending your data somewhere. Entrusting only the purchase record to an outside service is what lets us keep the design where your videos and music never leave the device.</p>
 
-      <h3>3. Photo library access</h3>
+      <h3>3. No personal information is collected, and there is no account</h3>
+      <p>The app does not collect personal information such as your name or email address. There is no account. It does not use the advertising identifier (IDFA), and it does not send your usage of the app to any third party. The only thing that leaves the device is the purchase record described in section 2.</p>
+
+      <h3>4. Photo library access</h3>
       <p>Access to the photo library is used <strong>only to load videos and to save exported videos</strong>. Loading is limited to the videos you choose, and saving happens only when you run an export.</p>
 
-      <h3>4. File access</h3>
-      <p>Access to files (for example through the Files app) is used <strong>only to load audio files and <code>.dancenow</code> files</strong>. The app does not access files other than those you choose.</p>
-
-      <h3>5. No advertising or analytics SDKs</h3>
-      <p>The app includes no advertising SDK and no third-party analytics SDK. It never asks for tracking permission.</p>
+      <h3>5. File access, and the files you export</h3>
+      <p>Access to files (for example through the Files app) is used <strong>only to load audio files, <code>.dancenow</code> files and backup files</strong>. The app does not access files other than those you choose.</p>
+      <p>Everything the app exports — videos, PDFs, <code>.dancenow</code> files and backups — is <strong>saved or sent by you, to a place you choose</strong>. The app never sends them anywhere on its own. If you choose a cloud destination such as iCloud Drive, the file is stored by that provider (Apple, and so on).</p>
+      <p>A <code>.dancenow</code> file contains audio <strong>only when you choose “Include the audio”</strong> while sharing. Please make sure yourself that the audio is yours to pass on.</p>
 
       <h3>6. About the “Your stats” screen</h3>
       <p>The settings screen includes “Your stats”, which shows counts such as how many times you exported or shared. <strong>These numbers are counted on the device only and are never transmitted.</strong> Only if you tap “Copy as one line” does the text go to your device's clipboard; whether to send it to anyone is entirely your decision.</p>
 
-      <h3>7. Future changes</h3>
+      <h3>7. No advertising SDKs, and no tracking</h3>
+      <p>The app contains <strong>no advertising SDK whatsoever</strong>. The only third-party SDK is RevenueCat, used for the purchase reporting described in section 2. The app <strong>never tracks you across other companies' apps or websites</strong>, and never shows a tracking permission prompt.</p>
+
+      <h3>8. Future changes</h3>
       <p>If we ever add a feature that sends anonymous usage counts (feature-use counts only — never videos, music, formation data or device identifiers) <strong>with your explicit opt-in consent</strong>, we will update this document first and ask for your consent inside the app. Nothing is sent unless you agree.</p>
 
-      <h3>8. Contact</h3>
+      <h3>9. Contact</h3>
       <p>Questions about this policy: <a href="mailto:support@niyang.app">support@niyang.app</a></p>
 
       <p class="muted"><a href="/dancenow/support/">Support</a> · <a href="/dancenow/">About DanceNow</a></p>

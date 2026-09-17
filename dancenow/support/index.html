@@ -17,7 +17,7 @@
     <section id="ja" lang="ja">
       <h1>DanceNow サポート</h1>
       <p class="tagline"><a href="/dancenow/">DanceNow</a> についての問い合わせ先と、よくある質問です。</p>
-      <p class="muted">最終更新日: 2026年9月13日</p>
+      <p class="muted">最終更新日: 2026年9月17日</p>
 
       <div class="card">
         <h3>問い合わせ先</h3>
@@ -39,13 +39,32 @@
         <dd>送った側と受け取る側の両方で、DanceNow を最新にしてください。<strong>「App Store でアプリを最新にしてから開いてください」</strong>と出た場合は、送った側の方が新しい版で作ったファイルです。受け取る側のアプリを App Store で更新すると開けるようになります。</dd>
 
         <dt>受け取った構成に音がない</dt>
-        <dd>仕様です。<code>.dancenow</code> には音源が含まれません(音源は他者の著作物であることが多く、ファイルとして渡さない設計にしています)。受け取った直後に出る画面で、自分の端末にある同じ音源を選び直してください。音源を選ばなくても、構成の確認と動画の書き出し(無音)はできます。</dd>
+        <dd>
+          <p><code>.dancenow</code> に音源が入るのは、<strong>送る人が共有のときに「音源も入れる」を選んだ場合だけ</strong>です(既定は入れません。音源は他者の著作物であることが多いため、毎回確認する作りにしています)。</p>
+          <p>入っていない場合は、受け取った直後に出る画面で<strong>自分の端末にある同じ音源を選び直して</strong>ください。音源を選ばなくても、構成の確認と動画の書き出し(無音)はできます。</p>
+        </dd>
+
+        <dt>LINE で .dancenow が送れない</dt>
+        <dd>
+          <p>LINE は送れるファイルの種類を限っており、<code>.dancenow</code> のような独自の形式は共有メニューから断られることがあります。<strong>AirDrop・ファイル App・メール</strong>をお使いください。</p>
+          <p>相手が DanceNow を使っていない場合は、<strong>動画か PDF で書き出す</strong>と LINE でもそのまま送れます(編集はできませんが、立ち位置は伝わります)。</p>
+        </dd>
+
+        <dt>書き出した動画や PDF に「DanceNow」と入る</dt>
+        <dd>無料でお使いの場合、動画と PDF のいちばん下に「DanceNow」の 1 行が入ります。<strong>ステージの外に置いてあるので、立ち位置や名前が隠れることはありません。</strong> DanceNow Pro にすると小さな印だけになり、「設定」のスイッチで消すこともできます。</dd>
 
         <dt>書き出した動画が写真に無い</dt>
         <dd>iPhone の「設定」→「DanceNow」→「写真」で、<strong>「追加のみ」または「フルアクセス」</strong>になっているか確認してください。「なし」になっていると保存できません。書き出しの最後に「動画を保存しました！」と出ていれば、写真 App の「最近の項目」にあります。</dd>
 
         <dt>データはどこに保存される?</dt>
-        <dd><strong>すべて iPhone の中です。</strong> 動画・音源・構成のデータをサーバーに送る仕組みはアプリにありません。アプリを削除すると、アプリ内のデータも一緒に消えます(写真 App に保存した動画は残ります)。詳しくは<a href="/dancenow/privacy/">プライバシーポリシー</a>をご覧ください。</dd>
+        <dd><strong>すべて iPhone の中です。</strong> 動画・音源・構成のデータをサーバーに送る仕組みはアプリにありません。外部へ渡るのは購入(課金)の記録だけです。詳しくは<a href="/dancenow/privacy/">プライバシーポリシー</a>をご覧ください。</dd>
+
+        <dt>アプリを消したら構成も消えた</dt>
+        <dd>
+          <p><strong>iOS はアプリを削除するときに、そのアプリのデータも一緒に消します。</strong> 削除の瞬間にアプリ側から「残しますか?」と確認を出すことはできない仕組みです。</p>
+          <p>そのため、「設定」に<strong>「バックアップを書き出す」</strong>があります。構成と音源プロジェクトを 1 つのファイルにまとめられるので、ファイル App や iCloud Drive など<strong>アプリの外</strong>に置いておいてください。戻すときは「バックアップから復元」か、そのファイルをファイル App でタップします。</p>
+          <p class="muted">機種変更や iPhone の復元では、iCloud やパソコンで取った端末のバックアップに構成も含まれているので一緒に戻ります。戻らないのは、<strong>同じ iPhone でアプリを削除して入れ直した場合だけ</strong>です。</p>
+        </dd>
       </dl>
 
       <p class="muted"><a href="/dancenow/privacy/">プライバシーポリシー</a> ・ <a href="/dancenow/">DanceNow について</a></p>
@@ -54,7 +73,7 @@
     <section id="en" lang="en">
       <h2>DanceNow Support</h2>
       <p class="tagline">How to reach us, and answers to common questions about <a href="/dancenow/">DanceNow</a>.</p>
-      <p class="muted">Last updated: September 13, 2026</p>
+      <p class="muted">Last updated: September 17, 2026</p>
 
       <div class="card">
         <h3>Contact</h3>
@@ -76,13 +95,32 @@
         <dd>Make sure both the sender and the receiver have the latest DanceNow. If you see <strong>“Please update the app from the App Store before opening this”</strong>, the file was made with a newer version than yours — updating DanceNow from the App Store will let you open it.</dd>
 
         <dt>The formation I received has no music</dt>
-        <dd>This is by design. A <code>.dancenow</code> file never contains audio (music is usually someone else's copyrighted work, so we don't pass it around as a file). Right after receiving, a screen asks you to pick the same track from your own device. You can still review the formation and export a (silent) video without picking one.</dd>
+        <dd>
+          <p>A <code>.dancenow</code> file contains audio <strong>only when the sender chose “Include the audio”</strong> while sharing. It is off by default, because music is usually someone else's copyrighted work, so the app asks every time.</p>
+          <p>If it wasn't included, the screen that appears right after receiving lets you <strong>pick the same track from your own device</strong>. You can still review the formation and export a (silent) video without picking one.</p>
+        </dd>
+
+        <dt>I can't send a .dancenow file over LINE</dt>
+        <dd>
+          <p>LINE limits which file types it accepts, and a custom format like <code>.dancenow</code> can be refused from the share menu. Use <strong>AirDrop, the Files app or email</strong> instead.</p>
+          <p>If the other person doesn't use DanceNow, <strong>export as a video or a PDF</strong> — those go through LINE fine. They can't be edited, but the positions come across.</p>
+        </dd>
+
+        <dt>My exported video or PDF says “DanceNow”</dt>
+        <dd>On the free plan, a single DanceNow line sits at the very bottom of exported videos and PDFs. <strong>It is outside the stage, so it never hides a position or a name.</strong> DanceNow Pro shrinks it to a small mark, and a switch in Settings turns it off.</dd>
 
         <dt>The exported video isn't in Photos</dt>
         <dd>Open Settings → DanceNow → Photos and check that it is set to <strong>“Add Photos Only” or “Full Access”</strong>. With “None”, saving fails. If the app showed “Video saved!” at the end of the export, the video is in the Recents album of the Photos app.</dd>
 
         <dt>Where is my data stored?</dt>
-        <dd><strong>Entirely on your iPhone.</strong> The app has no mechanism to send videos, music or formation data to any server. Deleting the app deletes its data (videos already saved to Photos stay there). See the <a href="/dancenow/privacy/">Privacy Policy</a> for details.</dd>
+        <dd><strong>Entirely on your iPhone.</strong> The app has no mechanism to send videos, music or formation data to any server. The only thing that leaves the device is your purchase record. See the <a href="/dancenow/privacy/">Privacy Policy</a> for details.</dd>
+
+        <dt>I deleted the app and my formations are gone</dt>
+        <dd>
+          <p><strong>iOS deletes an app's data along with the app.</strong> There is no way for an app to ask “keep this?” at the moment it is deleted.</p>
+          <p>That is why Settings has <strong>Export a backup</strong>. It gathers your formations and audio projects into a single file — keep that file <strong>outside the app</strong>, in Files or iCloud Drive. To bring it back, use “Restore from a backup”, or just tap the file in the Files app.</p>
+          <p class="muted">Moving to a new iPhone, or restoring one, brings your formations with it: they are part of the iCloud or computer backup of the device. The one case they do not come back is <strong>deleting and reinstalling the app on the same iPhone</strong>.</p>
+        </dd>
       </dl>
 
       <p class="muted"><a href="/dancenow/privacy/">Privacy Policy</a> · <a href="/dancenow/">About DanceNow</a></p>
