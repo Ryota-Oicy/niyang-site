@@ -48,9 +48,9 @@ LINE・X・Instagram はプレビューをキャッシュするので、すぐ�
 
 | 記事 | URL |
 |---|---|
-| 構成(フォーメーション)の作り方 — 基本の手順 | /dancenow/guide/formation-basics/ |
-| 10人前後のフォーメーション — 立ち位置・移動・ハケ(袖) | /dancenow/guide/ten-dancers/ |
-| 複数曲をつないだショーの構成の合わせ方 | /dancenow/guide/multi-song-show/ |
+| ダンスの構成(フォーメーション)の作り方 — 基本の手順 | /dancenow/guide/formation-basics/ |
+| 10人前後のフォーメーションの組み方 — 立ち位置・移動・ハケ(袖)の考え方 | /dancenow/guide/ten-dancers/ |
+| 複数曲をつないだショーの構成の合わせ方 — 曲ごとのカウントと移動 | /dancenow/guide/multi-song-show/ |
 
 **3本とも`<meta name="robots" content="noindex">`付きの下書きで、どのページからもリンクしていない**
 (URL を知っている人だけが読める)。末尾の「この手順をアプリでやるなら」から /dancenow/go/site/ へ飛ぶ。
