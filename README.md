@@ -43,3 +43,24 @@ GitHub Pages で配信している静的サイト(ビルドなし・JS なし・
 全ページの `og:image` / `twitter:image` が指している 1200×630 の画像(いまはプレースホルダー)。
 差し替えは同じ名前・同じ大きさの画像で上書きするか、`swift scripts/make-og-image.swift` で作り直す。
 LINE・X・Instagram はプレビューをキャッシュするので、すぐには反映されないことがある。
+
+## ガイド記事(/dancenow/guide/)— いまは下書き
+
+| 記事 | URL |
+|---|---|
+| 構成(フォーメーション)の作り方 — 基本の手順 | /dancenow/guide/formation-basics/ |
+| 10人前後のフォーメーション — 立ち位置・移動・ハケ(袖) | /dancenow/guide/ten-dancers/ |
+| 複数曲をつないだショーの構成の合わせ方 | /dancenow/guide/multi-song-show/ |
+
+**3本とも`<meta name="robots" content="noindex">`付きの下書きで、どのページからもリンクしていない**
+(URL を知っている人だけが読める)。末尾の「この手順をアプリでやるなら」から /dancenow/go/site/ へ飛ぶ。
+書くときの決まり: 誇張・根拠のない数字・他アプリの批判を書かない。競合の名前を出さない。
+
+### 承認して公開する手順
+
+1. 記事を読んで直す(直したら「承認した版」としてコミット)。
+2. その記事の`<head>`から、`<meta name="robots" content="noindex">`の行と、その上の「下書き」のコメントを消す。
+3. 必要なら、製品ページ(dancenow/index.html)やサポートページからリンクを張る
+   (**下書きの間は張らない**)。
+4. コミットして push。検索に載るまでは数日〜数週間かかる
+   (急ぐなら Google Search Console で URL の登録をリクエストする)。
