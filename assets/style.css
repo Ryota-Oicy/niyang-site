@@ -108,3 +108,50 @@ footer {
 }
 
 footer a { color: var(--muted); }
+
+/* ---- DanceNow 製品ページ(2026-09-25) ---- */
+
+/* ファーストビュー: 英語のメインキャッチを大きく、その下に各言語の補足を1行。 */
+.hero { padding: 24px 0 8px; }
+.hero .app { font-size: 20px; font-weight: 700; margin: 0 0 12px; }
+.hero .app span { color: var(--accent); }
+.hero .catch {
+  font-size: clamp(34px, 9vw, 56px);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+}
+.hero .catch-sub { color: var(--muted); font-size: 17px; margin: 14px 0 0; }
+.hero .actions { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+
+/* 3段(作る・音を合わせる・配る)。狭い画面では縦に積む。 */
+.steps { list-style: none; padding: 0; margin: 16px 0; display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.steps li { background: var(--surface); border-radius: 12px; padding: 14px 16px; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.steps .num { color: var(--accent); font-weight: 700; font-size: 13px; letter-spacing: 0.08em; }
+.steps h3 { margin: 0; }
+.steps p { margin: 0; font-size: 15px; }
+
+/* スクリーンショットの置き場所(画像が用意できるまでの枠)。 */
+.shot {
+  aspect-ratio: 9 / 19.5;
+  max-width: 100%;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+}
+
+.press dl { margin: 0; }
+.press dt { font-weight: 700; margin-top: 14px; }
+.press dd { margin: 4px 0 0; }
+.press img.icon { width: 96px; height: 96px; border-radius: 22px; display: block; }
+.press .shots { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); margin-top: 6px; }
+/* 1列に積んだ時に枠が画面いっぱいの縦長にならないよう、幅に上限を付ける。 */
+.steps .shot { width: min(100%, 220px); margin: 0 auto; }

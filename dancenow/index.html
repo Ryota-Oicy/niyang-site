@@ -4,7 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DanceNow — niyang.app</title>
-  <meta name="description" content="DanceNow: 構成表・音源編集・動画比較を iPhone 一台で。動画・音源・構成データは端末から一切出ません。">
+  <meta name="description" content="Your formation. Your music. Your video. 構成を、音つきの動画でメンバーに。動画も音源も端末から出ない iPhone アプリ。">
+  <!-- OGP / Twitter Card(LINE・Instagram・X でリンクを貼った時のプレビュー)。
+       画像の差し替え方は scripts/make-og-image.swift の先頭のコメント。 -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="niyang.app">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="DanceNow — Your formation. Your music. Your video.">
+  <meta property="og:description" content="構成を、音つきの動画でメンバーに。動画も音源も端末から出ません。">
+  <meta property="og:url" content="https://niyang.app/dancenow/">
+  <meta property="og:image" content="https://niyang.app/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DanceNow — Your formation. Your music. Your video.">
+  <meta name="twitter:description" content="構成を、音つきの動画でメンバーに。動画も音源も端末から出ません。">
+  <meta name="twitter:image" content="https://niyang.app/assets/og-image.png">
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
@@ -14,44 +29,106 @@
   </header>
 
   <main>
+    <!-- ファーストビュー: 英語のメインキャッチ(全言語共通)と、日本語の補足1行。 -->
+    <div class="hero">
+      <p class="app">Dance<span>Now</span></p>
+      <h1 class="catch">Your formation.<br>Your music.<br>Your video.</h1>
+      <p class="catch-sub">構成を、音つきの動画でメンバーに。</p>
+      <div class="actions">
+        <!-- App Store への入口は経路別リンク /dancenow/go/site(転送先は dancenow/go/_config.txt で一括管理)。 -->
+        <a class="button" href="/dancenow/go/site/">App Store で見る</a>
+        <span class="muted">iPhone・iPad 向け</span>
+      </div>
+    </div>
+
     <section id="ja" lang="ja">
-      <h1>DanceNow</h1>
-      <p class="tagline">構成表・音源編集・動画比較を、iPhone 一台で。</p>
+      <h2>何ができるか</h2>
+      <ol class="steps">
+        <li>
+          <span class="num">STEP 1</span>
+          <h3>作る</h3>
+          <p>ステージの立ち位置をスライドで並べる。移動のカウント、動線、袖へのハケまで書ける。バミリと上手・下手、外足・内足の呼び方のまま。</p>
+          <div class="shot">スクリーンショット<br>(構成の編集画面)</div>
+        </li>
+        <li>
+          <span class="num">STEP 2</span>
+          <h3>音を合わせる</h3>
+          <p>曲を切ってつなぎ、フェードをかける。曲ごとに BPM と1カウント目をタップで決めると、スライドの長さがエイトに合う。</p>
+          <div class="shot">スクリーンショット<br>(音源の編集画面)</div>
+        </li>
+        <li>
+          <span class="num">STEP 3</span>
+          <h3>配る</h3>
+          <p>音つきの動画にして、メンバーに LINE や AirDrop で送る。受け取る側はアプリがいらない。紙に刷る PDF も作れる。</p>
+          <div class="shot">スクリーンショット<br>(書き出した動画)</div>
+        </li>
+      </ol>
 
-      <p><strong>動画も音源も、端末から一切出ません。</strong> 比較・解析・書き出しはすべて iPhone の中で行われ、<strong>動画・音源・構成データを外部に送る仕組みそのものがありません</strong>。アプリが外部とやり取りするのは購入(課金)の記録だけです(<a href="/dancenow/privacy/">プライバシーポリシー</a>)。</p>
+      <h2>動画も音源も、端末から出ません</h2>
+      <p>構成も、切った音源も、書き出した動画も、すべて iPhone の中で作ります。<strong>動画・音源・構成データを外部に送る仕組みそのものがありません。</strong>アプリが外部とやり取りするのは購入(課金)の記録だけです(<a href="/dancenow/privacy/">プライバシーポリシー</a>)。</p>
 
-      <ul>
-        <li><strong>構成を組む</strong> — ステージ上の立ち位置をスライドで並べ、曲ごとの BPM と1カウント目に合わせて動画に書き出す</li>
-        <li><strong>色覚の違いに配慮</strong> — ダンサーの7色は、赤と緑や青と緑が区別しにくい人でも見分けやすい配色(岡部・伊藤による配色を踏襲)。色だけに頼らず、番号と名前でも誰かが分かる</li>
-        <li><strong>音源を切る</strong> — 複数の曲を繋ぎ、カット・フェード・速度を整える</li>
-        <li><strong>配る</strong> — 音源つきの動画、紙に刷れる PDF、そのまま編集できる <code>.dancenow</code> ファイルの3つから選んでメンバーへ手渡し(AirDrop・ファイル App・メール・LINE)</li>
-        <li><strong>動画を比べる</strong> — お手本と自分の動画を半透明で重ね、音でタイミングを自動で合わせる</li>
-      </ul>
+      <h2>作った人</h2>
+      <p>DanceNow は、ダンスイベントを主催しているダンサー本人(niyang)が開発しています。構成を組んで、音を合わせて、メンバーに配る——自分の現場でいつもやっていることを、iPhone 一台で済ませるために作りました。</p>
 
-      <!-- App Store のリンクは公開後に差し替える -->
-      <p><a class="button placeholder" href="#" aria-disabled="true">App Store(準備中)</a></p>
-
-      <p class="muted"><a href="/dancenow/support/">サポート</a> ・ <a href="/dancenow/privacy/">プライバシーポリシー</a></p>
+      <p><a class="button" href="/dancenow/go/site/">App Store で見る</a></p>
+      <p class="muted"><a href="/dancenow/support/">サポート</a> ・ <a href="/dancenow/privacy/">プライバシーポリシー</a> ・ <a href="#press">プレスキット</a></p>
     </section>
 
     <section id="en" lang="en">
-      <h2>DanceNow</h2>
-      <p class="tagline">Formations, music editing and video comparison — on one iPhone.</p>
+      <h2>What it does</h2>
+      <ol class="steps">
+        <li>
+          <span class="num">STEP 1</span>
+          <h3>Build</h3>
+          <p>Lay out positions on a stage, slide by slide — with move counts, paths, and dancers exiting to the wings.</p>
+          <div class="shot">Screenshot<br>(formation editor)</div>
+        </li>
+        <li>
+          <span class="num">STEP 2</span>
+          <h3>Set it to music</h3>
+          <p>Cut and join your songs, add fades, and tap out the BPM and count one for each song so every slide lands on the eights.</p>
+          <div class="shot">Screenshot<br>(music editor)</div>
+        </li>
+        <li>
+          <span class="num">STEP 3</span>
+          <h3>Send it</h3>
+          <p>Export a video with the music and send it to your members through a messaging app or AirDrop. They don't need the app. You can also print a PDF.</p>
+          <div class="shot">Screenshot<br>(exported video)</div>
+        </li>
+      </ol>
 
-      <p><strong>Your videos and music never leave the device.</strong> Comparison, analysis and export all happen on the iPhone, and <strong>there is no mechanism to send your videos, music or formation data anywhere</strong>. The only thing the app exchanges with the outside world is your purchase record (<a href="/dancenow/privacy/">Privacy Policy</a>).</p>
+      <h2>Your videos and music stay on your iPhone</h2>
+      <p>Formations, edited music and exported videos are all made on the iPhone. <strong>There is no mechanism to send your videos, music or formation data anywhere.</strong> The only thing the app exchanges with the outside world is your purchase record (<a href="/dancenow/privacy/">Privacy Policy</a>).</p>
 
-      <ul>
-        <li><strong>Build formations</strong> — lay out positions on a stage, slide by slide, and export a video timed to each song's BPM and count one</li>
-        <li><strong>Colours that work across colour vision differences</strong> — the seven dancer colours are chosen so that people who find red and green, or blue and green, hard to tell apart can still distinguish them (following the Okabe–Ito colour scheme), and the number and name identify everyone without relying on colour alone</li>
-        <li><strong>Cut the music</strong> — join several songs, trim, fade and change speed</li>
-        <li><strong>Hand it to your members</strong> — choose a video with the music, a PDF you can print, or a <code>.dancenow</code> file they can edit, and pass it on through AirDrop, the Files app, email or a messaging app</li>
-        <li><strong>Compare videos</strong> — overlay a reference and your own take, synced automatically by the audio</li>
-      </ul>
+      <h2>Who made it</h2>
+      <p>DanceNow is built by niyang, a dancer who runs dance events. It does the things a leader does before every show — build the formation, set it to the music, send it to the members — on one iPhone.</p>
 
-      <!-- Replace with the App Store link after launch -->
-      <p><a class="button placeholder" href="#" aria-disabled="true">App Store (coming soon)</a></p>
+      <p><a class="button" href="/dancenow/go/site/">View on the App Store</a></p>
+      <p class="muted"><a href="/dancenow/support/">Support</a> · <a href="/dancenow/privacy/">Privacy Policy</a> · <a href="#press">Press kit</a></p>
+    </section>
 
-      <p class="muted"><a href="/dancenow/support/">Support</a> · <a href="/dancenow/privacy/">Privacy Policy</a></p>
+    <section id="press" class="press">
+      <h2>プレスキット / Press kit</h2>
+      <dl>
+        <dt>アイコン / Icon</dt>
+        <dd>
+          <img class="icon" src="/dancenow/press/dancenow-icon-1024.png" alt="DanceNow のアイコン">
+          <a href="/dancenow/press/dancenow-icon-1024.png">PNG(1024×1024)</a>
+        </dd>
+        <dt>スクリーンショット / Screenshots</dt>
+        <dd>
+          <!-- 撮影後に dancenow/press/ に置いて差し替える(撮り方は DanceNow リポジトリの docs/store-screenshots.md)。 -->
+          <div class="shots">
+            <div class="shot">1</div><div class="shot">2</div><div class="shot">3</div><div class="shot">4</div><div class="shot">5</div>
+          </div>
+        </dd>
+        <dt>一行説明 / One-liner</dt>
+        <dd>Your formation. Your music. Your video.<br>構成を、音つきの動画でメンバーに。</dd>
+        <dt>開発者 / Developer</dt>
+        <dd>niyang — ダンスイベントを主催しているダンサー本人が開発。<br>niyang, a dancer who runs dance events.</dd>
+        <dt>問い合わせ / Contact</dt>
+        <dd><a href="mailto:support@niyang.app">support@niyang.app</a></dd>
+      </dl>
     </section>
   </main>
 
