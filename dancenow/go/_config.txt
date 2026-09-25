@@ -1,0 +1,13 @@
+# DanceNow の経路別リンク(/dancenow/go/<経路>/)の設定。**値を入れたら scripts/build-go-links.py を実行する。**
+#
+#   python3 scripts/build-go-links.py
+#
+# 転送先は https://apps.apple.com/app/id<APP_ID>?pt=<PROVIDER_TOKEN>&ct=<経路名>&mt=8
+# - APP_ID          … App Store Connect の「App 情報」→ Apple ID(数字だけ)
+# - PROVIDER_TOKEN  … App Store Connect の「App 分析」→ キャンペーン → provider token(pt=の値)
+# どちらかが空の間は、各ページは App Store へ転送せず「準備中」を出す(壊れたリンクへ飛ばさないため)。
+# 予約注文 → 本公開でも App の URL(id)は変わらないので、QR も印刷物もそのままでよい。
+# この値は秘密ではない(App Store のリンクに誰でも見える形で入るもの)。
+
+APP_ID=
+PROVIDER_TOKEN=
